@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #7a82f093;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -10,13 +10,14 @@ body{
     align-items: center;    
 }
 .signup-container{
-    background-color: #f4f4f4;
+    background-color: #dee0f2af;
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .signup-container h1,h2{
     text-align: center;
@@ -44,7 +45,7 @@ body{
 .form-group input:focus{
     border-color: #007bff;
     outline: none;
-    width: 100%;
+    width: 90%;
 }
 .button{
     width: 100%;
