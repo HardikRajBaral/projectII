@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #7a82f093;
+    /* background-color: #7a82f093; */
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background: linear-gradient(45deg,#ccc, #7f77b9);
    
 }
 .container {
@@ -21,10 +21,13 @@ body {
     max-width: 400px;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    
 }
 .container h1 ,p {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 .form-group {
     margin-bottom: 15px;
