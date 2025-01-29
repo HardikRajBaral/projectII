@@ -1,7 +1,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #7a82f093; */
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -9,16 +8,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,#ccc, #7f77b9);
-   
+    background: linear-gradient(45deg,#ededed, #877cdd);
+    background: linear-gradient(20deg,#ededed, #877cdd);
+    
 }
 .container {
-    background: #dee0f2af;
+   
     background: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
