@@ -8,21 +8,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,#ededed, #877cdd);
-    background: linear-gradient(20deg,#ededed, #877cdd);
-    
+    background-image: url(/appsImage.webp);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;  
 }
+
 .container {
    
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    
    
     
 }
