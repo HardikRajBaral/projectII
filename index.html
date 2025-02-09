@@ -1,54 +1,52 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style1.css" type="text/css">
-    <title>RideSharing</title>
+    <title>RidePool - Book Ride</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="wrapper">
-        <div class="image-container">
-            <img src="/assets/image/mapImage.jpg" alt="map">
+    <nav class="navbar">
+        <div class="app-title">RidePooling App</div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="#settings">Settings</a>
+            <a href="#about">About</a>
+            <button class="role-switch" id="roleSwitch">Driver</button>
         </div>
-        <div class="icons">
-
+    </nav>
+    
+    <div class="main-content">
+        <div id="map"></div>
+        <div class="ride-form">
+            <form id="rideForm">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="text" id="from" placeholder="Enter starting point" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="Enter destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Departure Time</label>
+                    <input type="datetime-local" id="time" required>
+                </div>
+                <div class="form-group" id="seatsGroup">
+                    <label for="seats">Available Seats</label>
+                    <select id="seats">
+                        <option value="1">1 Seat</option>
+                        <option value="2">2 Seats</option>
+                        <option value="3">3 Seats</option>
+                    </select>
+                </div>
+                <button type="submit" id="submitBtn">Offer Ride</button>
+            </form>
         </div>
-        <div class="address">
-
-        </div>
-        <div class="-input-box">
-            <input type="text" id="address" name="address" placeholder="from">
-        </div>
-        <div class="input-box">
-            <input type="text" id="address" name="address" placeholder=" To">
-        </div>
-        <div class="input-box">
-            <input type="text" name="price" id="price" placeholder="offer your price">
-        </div>
-            <button type="button" class="button">Find a Driver</button>
-        <div class="options">
-            <button type="menu">
-
-            </button>
-        </div>    
     </div>
     
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
