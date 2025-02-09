@@ -143,3 +143,30 @@ const map = L.map('map').setView([51.505, -0.09], 13);
         L.marker([51.5, -0.09]).addTo(map)
             .bindPopup('Available Ride<br>To: Central London')
             .openPopup();
+
+
+
+
+
+
+
+// settings.js
+
+// Toggle dropdown visibility when settings button is clicked
+document.getElementById("settingsButton").addEventListener("click", function(e) {
+    e.stopPropagation(); // Prevent click event from propagating
+    const dropdown = document.querySelector(".dropdown");
+    dropdown.classList.toggle("show");
+  });
+  
+  // Close dropdown if clicked outside
+  document.addEventListener("click", function(e) {
+    const dropdown = document.querySelector(".dropdown");
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("show");
+    }
+  });
+  
+  
+  
+  

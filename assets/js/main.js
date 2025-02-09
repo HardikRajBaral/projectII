@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set default time to current date with only time selection
     const timeInput = document.getElementById("time");
     const now = new Date();
-    const formattedTime = now.toISOString().slice(11, 16); // Get HH:MM format
+    const formattedTime = now.toISOString().slice(0, 16); // Get YYYY-MM-DDTHH:MM format
     timeInput.value = formattedTime;
     timeInput.setAttribute("min", formattedTime);
 
