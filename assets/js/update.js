@@ -34,3 +34,40 @@ document.getElementById("updatePhoneForm").addEventListener("submit", function (
     alert("Email updated successfully!");
     // You can add an AJAX call or other logic here to update the email in the backend
   });
+
+
+
+
+  document.getElementById("updatePasswordForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form submission
+  
+    const currentPassword = document.getElementById("currentPassword").value;
+    const newPassword = document.getElementById("newPassword").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+  
+    // Validate new password and confirm password match
+    if (newPassword !== confirmPassword) {
+      alert("New password and confirm password do not match.");
+      return;
+    }
+  
+    // Validate password length (e.g., at least 8 characters)
+    if (newPassword.length < 8) {
+      alert("Password must be at least 8 characters long.");
+      return;
+    }
+  
+    // Simulate successful update
+    alert("Password updated successfully!");
+    // You can add an AJAX call or other logic here to update the password in the backend
+  });
+
+
+
+
+
+
+
+
+
+  
