@@ -149,7 +149,6 @@ const map = L.map('map').setView([51.505, -0.09], 13);
 
 
 
-
 // settings.js
 
 // Toggle dropdown visibility when settings button is clicked
@@ -166,7 +165,3 @@ document.getElementById("settingsButton").addEventListener("click", function(e) 
       dropdown.classList.remove("show");
     }
   });
-  
-  
-  
-  

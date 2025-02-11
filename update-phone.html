@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RidePool - Book Ride</title>
+  <title>RidePool - Update Phone Number</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/settings.css">
+  <link rel="stylesheet" href="/assets/css/update.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="app-title">RidePooling App</div>
     <div class="hamburger">☰</div>
     <div class="nav-links">
+      <a href="/index.html" class="return">Home</a>
       <!-- Dropdown for Settings -->
       <div class="dropdown">
+        
         <button class="dropdown-button">Settings</button>
         <div class="dropdown-content">
           <a href="/update-phone.html">Update Phone Number</a>
@@ -28,35 +30,19 @@
   </nav>
   
   <div class="main-content">
-    <div id="map"></div>
-    <div class="ride-form">
-      <form id="rideForm">
+    <div class="update-box">
+      <h2>Update Phone Number</h2>
+      <form id="updatePhoneForm">
         <div class="form-group">
-          <label for="from">From</label>
-          <input type="text" id="from" placeholder="Enter starting point" required>
+          <label for="newPhone">New Phone Number</label>
+          <input type="tel" id="newPhone" placeholder="Enter new phone number" required>
         </div>
-        <div class="form-group">
-          <label for="to">To</label>
-          <input type="text" id="to" placeholder="Enter destination" required>
-        </div>
-        <div class="form-group">
-          <label for="time">Departure Time</label>
-          <input type="datetime-local" id="time" required>
-        </div>
-        <div class="form-group" id="seatsGroup">
-          <label for="seats">Available Seats</label>
-          <select id="seats">
-            <option value="1">1 Seat</option>
-            <option value="2">2 Seats</option>
-            <option value="3">3 Seats</option>
-          </select>
-        </div>
-        <button type="submit" id="submitBtn">Offer Ride</button>
+        <button type="submit">Update Phone Number</button>
       </form>
     </div>
   </div>
   
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/update-phone.js"></script>
 </body>
 </html>
