@@ -18,15 +18,6 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     // Redirect to another page or perform further actions
 });
 
-// Function to handle "Sign Up" link click
-// document.querySelector('.signup-link').addEventListener('click', function (event) {
-//     event.preventDefault(); // Prevent the default link behavior
-
-//     // Simulate a sign-up action
-//     console.log('Redirecting to Sign Up page...');
-//     alert('Redirecting to Sign Up page...');
-//     // Redirect to the sign-up page or open a sign-up modal
-// });
 
 
 document.getElementById('signupForm').addEventListener('submit', function(e) {
@@ -149,19 +140,3 @@ const map = L.map('map').setView([51.505, -0.09], 13);
 
 
 
-// settings.js
-
-// Toggle dropdown visibility when settings button is clicked
-document.getElementById("settingsButton").addEventListener("click", function(e) {
-    e.stopPropagation(); // Prevent click event from propagating
-    const dropdown = document.querySelector(".dropdown");
-    dropdown.classList.toggle("show");
-  });
-  
-  // Close dropdown if clicked outside
-  document.addEventListener("click", function(e) {
-    const dropdown = document.querySelector(".dropdown");
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove("show");
-    }
-  });

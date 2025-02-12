@@ -164,12 +164,16 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        width: 0%;
+        width: 90%; /* Adjust width instead of setting it to 0 */
         height: auto;
         flex-direction: column;
     }
 
     .image-container {
-        display: none;
+        display: none; /* Hides the image container on smaller screens */
+    }
+
+    .form-container {
+        padding: 30px;
     }
 }
